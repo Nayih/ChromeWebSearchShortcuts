@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Nayoh Google Search Shortcuts
 // @namespace    http://tampermonkey.net/
-// @version      1.0
+// @version      1.1
 // @description  Adds customizable search shortcuts with dynamic tab support.
 // @author       Nayoh
 // @match        *://www.google.com/search?*
@@ -155,7 +155,7 @@
 
         const clearBtn = document.createElement('a');
         clearBtn.textContent = 'Clear';
-        clearBtn.style.cssText = `color: #f28b82; font-size: 14px; font-weight: bold; margin-right: 20px; padding: 4px 8px; cursor: pointer; text-decoration: none; flex-shrink: 0;`;
+        clearBtn.style.cssText = `color: #f28b82; font-size: 14px; font-weight: bold; margin-right: 10px; padding: 4px 8px; cursor: pointer; text-decoration: none; flex-shrink: 0;`;
         clearBtn.onclick = (e) => {
             e.preventDefault();
             sessionStorage.setItem('nayoh_active_btn', null);
@@ -168,10 +168,10 @@
             btn.textContent = config.text;
 
             const isSelected = (activeBtnText === config.text);
-            const idleColor = '#80867D';
-            const activeColor = '#FFFFFF';
+            const idleColor = '#80868B';
+            const activeColor = '#E8E8E8';
 
-            btn.style.cssText = `color: ${isSelected ? activeColor : idleColor}; font-size: 14px; font-weight: bold; margin-right: 20px; padding: 4px 8px; cursor: pointer; text-decoration: none; transition: 0.1s; flex-shrink: 0;`;
+            btn.style.cssText = `color: ${isSelected ? activeColor : idleColor}; font-size: 14px; font-weight: bold; margin-right: 10px; padding: 4px 8px; cursor: pointer; text-decoration: none; transition: 0.1s; flex-shrink: 0;`;
 
             btn.onmouseover = () => { if(!isSelected) btn.style.color = '#E8E8DB'; };
             btn.onmouseout = () => { if(!isSelected) btn.style.color = idleColor; };
