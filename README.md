@@ -1,14 +1,15 @@
 # Chrome Web Search Shortcuts
 
-## Install 🔽
+## Preview 📷
 
-Preview: 
 ![](./[Project]Images/[Project]Preview02.gif)
 
 ![](./[Project]Images/[Project]Preview03.gif)
 
+## Install 🔽
+
 * Download .js file from [release](https://github.com/Nayih/ChromeWebSearchShortcuts/releases).
-* Drop the .js file into [Tampermonkey Dashboard](chrome-extension://dhdgffkkebhmkfjojejmpbldmpobfkfo/options.html#nav=dashboard) page.
+* Drop the .js file into [Tampermonkey](https://chromewebstore.google.com/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo) Dashboard page.
 
 ## Configuration ⚙️
 
