@@ -28,7 +28,7 @@
         { term: " Anime", text: "Anime", tbm: null },
         { term: " Show", text: "Show", tbm: null },
         { term: " Movie", text: "Movie", tbm: null },
-        { term: " site:igg-games.cc", text: "IGG", tbm: null },
+        { term: " IGG", text: "IGG", tbm: null },
         { term: " Torrent", text: "Torrent", tbm: null }
     ];
 
@@ -251,3 +251,4 @@
     }).observe(document.body, { childList: true, subtree: true });
     createCustomBar();
 })();
+
