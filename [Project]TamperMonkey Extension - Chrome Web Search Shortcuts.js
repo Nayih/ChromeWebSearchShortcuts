@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Nayoh Google Search Shortcuts
 // @namespace    http://tampermonkey.net/
-// @version      1.1
+// @version      1.2
 // @description  Adds customizable search shortcuts with dynamic tab support.
 // @author       Nayoh
 // @match        *://www.google.com/search?*
@@ -251,4 +251,5 @@
     }).observe(document.body, { childList: true, subtree: true });
     createCustomBar();
 })();
+
 
